@@ -1,0 +1,123 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Styles Project.css" />
+    
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+
+    <form id="survey-form">
+      <p id="description">
+        Thank you for taking the time to fill out this survey form. The form is
+        to find out if you use our products.
+      </p>
+      <fieldset>
+        <label id="name-label"
+          >Name:
+          <input
+            placeholder="Enter Your Name"
+            id="name"
+            name="name"
+            type="text"
+            required
+        /></label>
+
+        <label id="email-label"
+          >Email:
+          <input
+            placeholder="Enter Your Email"
+            id="email"
+            name="email-label"
+            type="email"
+            required
+        /></label>
+
+        <label id="number-label"
+          >Age (Years):
+          <input
+            placeholder="Age"
+            id="number"
+            type="number"
+            name="number"
+            min="13"
+            max="120"
+        /></label>
+
+        <label id="Gender"
+          >Gender
+          <select id="dropdown">
+            <option value="" disabled selected>Pick Your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Do you use our products ?</legend>
+        <label>
+          <input value="yes" name="yes" type="radio" class="radio" >Yes</input>
+        </label>
+        <label>
+          <input value="no" name="no" type="radio" class="radio" >No</input>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you think we should add more products ?</legend>
+        <label>
+          <input value="yes" name="yes" type="radio" class="radio" >Yes</input>
+        </label>
+        <label>
+          <input value="no" name="no" type="radio" class="radio" >No</input>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which our products do yo use ?</legend>
+        <label>
+          <input
+            value="products1"
+            type="checkbox"
+            class="checkbox"
+            name="products"
+          />
+          Product 1
+        </label>
+        <label>
+          <input
+            value="products2"
+            type="checkbox"
+            class="checkbox"
+            name="products"
+          />
+          Product 2
+        </label>
+        <label>
+          <input
+            value="products3"
+            type="checkbox"
+            class="checkbox"
+            name="products"
+          />
+          Product 3
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Additional Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Enter your comments here..."
+        ></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
